@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Valentine's Day ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="hearts"></div>
+
+<!-- Title Screen -->
+<div id="title-screen" class="screen active">
+    <h1>Happy Valentine’s Day ❤️</h1>
+    <p class="subtitle">We've been through so much together, here are some of my favorite memories that we've had together (that I have photo evidence of). I love you so much and hope we have the best day ever together :D</p>
+    <button class="start-btn" onclick="startSlideshow()">START DA SLIDESHOW</button>
+</div>
+
+<!-- Slideshow Screen -->
+<div id="slideshow-screen" class="screen">
+    <div class="slideshow-container">
+
+        <!-- Slides will be generated dynamically from the images/ folder -->
+        <div id="slides"></div>
+
+        <div class="controls">
+            <button onclick="prevSlide()">❮</button>
+            <button onclick="nextSlide()">❯</button>
+        </div>
+
+        <!-- This button appears after you've viewed every slide -->
+        <button id="open-itinerary-btn" class="itinerary-btn" style="display:none;" onclick="openItinerary()">Open Our Itinerary</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
